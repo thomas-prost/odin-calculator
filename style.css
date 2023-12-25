@@ -1,0 +1,150 @@
+@font-face {
+  font-family: lcd-screen;
+  src: url(font/DS-DIGIT.TTF);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+button {
+  border: none;
+}
+
+.background {
+  background-color: #383838;
+  width: 300px;
+  height: 525px;
+  border-radius: 15px 15px 30px 30px;
+  box-shadow: inset -5px -5px 10px #151515, inset 5px 5px 5px #7a7a7a;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.screen-emboss {
+  margin-top: 20px;
+  background-color: #383838;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 250px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 10px solid #494949;
+  border-right: 10px solid #3a3a3a;
+  border-bottom: 30px solid #303030;
+  border-left: 10px solid #3a3a3a;
+  box-shadow: 0px 0px 3px rgb(32, 32, 32);
+}
+
+.screen-border {
+  background-color: #919181;
+  border-radius: 2px;
+  width: 230px;
+  height: 60px;
+  box-shadow: inset 0px 0px 4px #43433c;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.screen {
+  background-color: #8a8a7a;
+  border-radius: 5px;
+  width: 180px;
+  height: 40px;
+  box-shadow: inset 5px 5px 10px #4e4e45, inset -2px -2px 5px #66665b;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 10px;
+  font-family: lcd-screen, monospace;
+  font-size: 23px;
+  color: #383838;
+  overflow: hidden;
+}
+
+.keyboard {
+  width: 250px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.key {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+}
+
+.number,
+.decimal {
+  background-color: black;
+  box-shadow: inset -10px 0px 20px #202020, inset 0px 10px 15px #666666,
+    0px 0px 5px rgb(32, 32, 32);
+}
+
+.operation {
+  background-color: #5d4438;
+  box-shadow: inset -10px 0px 20px #3e2b22, inset 0px 10px 15px #a27965,
+    0px 0px 5px rgb(32, 32, 32);
+}
+
+.total {
+  background-color: #edbb48;
+  color: black;
+  box-shadow: inset -10px 0px 20px #a47912, inset 0px 10px 15px #fee6ac,
+    0px 0px 5px rgb(32, 32, 32);
+}
+
+.remove {
+  background-color: #db4737;
+  color: black;
+  box-shadow: inset -10px 0px 20px #751d13, inset 0px 10px 15px #fec7ac,
+    0px 0px 5px rgb(32, 32, 32);
+}
+
+.number-pressed,
+.decimal-pressed {
+  box-shadow: inset -10px 0px 10px #202020, inset 0px 10px 20px #7d7d7d,
+    0px 0px 2px rgb(32, 32, 32);
+  font-size: 19px;
+}
+
+.operation-pressed {
+  box-shadow: inset -10px 0px 15px #261b16, inset 0px 10px 20px #b88a73,
+    0px 0px 2px rgb(32, 32, 32);
+  font-size: 19px;
+}
+
+.total-pressed {
+  box-shadow: inset -10px 0px 10px #936c10, inset 0px 10px 20px #fee6ac,
+    0px 0px 2px rgb(32, 32, 32);
+  font-size: 19px;
+}
+
+.remove-pressed {
+  box-shadow: inset -10px 0px 10px #a0321e, inset 0px 10px 20px #feb3ac,
+    0px 0px 2px rgb(32, 32, 32);
+  font-size: 19px;
+}
+
+.align-right {
+  margin-left: 195px;
+}
